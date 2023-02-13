@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navBar {
+  background-color: brown;
+  height: 11vh;
+  color: white;
+}
+
+.bodyTop {
+  padding: 20px;
+}
+
+.card + .card {
+  margin-top: 20px;
+}
+
+.bodyTop .card {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid black;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 433px;
+}
+
+.bodyTop .card .title {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.bodyTop .card .heathBar {
+  width: 95%;
+  height: 30px;
+  display: flex;
+  background-color: #fde5e4;
+  margin-bottom: 15px;
+}
+.bodyTop .card .heathBar #MonsterHeath {
+  height: 30px;
+  background-color: #05a876;
+  width: 100%;
+}
+.bodyTop .card .heathBar #YourHeath {
+  height: 30px;
+  background-color: #05a876;
+  width: 100%;
+}
+
+button {
+  width: 128px;
+  height: 35px;
+  background-color: #88005b;
+  border: 0;
+  border-radius: 7.5px;
+  margin: 10px;
+  color: white;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#BattleLog .card {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 433px;
+}
+
+#BattleLog .card .title {
+  margin: 15px;
+}
+
+#BattleLog .card #logs {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+p + p {
+  margin-top: 5.5px;
+}
+
+.Monster {
+  color: #da8d00;
+}
+
+.Player {
+  color: #7700ff;
+}
+
+.cred {
+  color: red;
+}
+
+.cgreen {
+  color: green;
+}
+
+#GameOver .card {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 433px;
+}

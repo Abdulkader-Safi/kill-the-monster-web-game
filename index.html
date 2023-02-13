@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>exam</title>
+  </head>
+  <body>
+    <!-- Title -->
+    <div class="navBar">
+      <div class="container">
+        <h1>Kill The Monster</h1>
+      </div>
+    </div>
+
+    <!-- Body Heath -->
+    <div class="bodyTop">
+      <div class="container">
+        <div class="card">
+          <div class="title">
+            <h3>Monster Health</h3>
+          </div>
+          <div class="heathBar">
+            <div id="MonsterHeath"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="title">
+            <h3>Your Health</h3>
+          </div>
+          <div class="heathBar">
+            <div id="YourHeath"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- buttons -->
+    <div id="buttons">
+      <div class="top">
+        <button onclick="attack()">ATTACK</button>
+        <button onclick="specialAttack()">SPECIAL ATTACK</button>
+      </div>
+      <div class="bottom">
+        <button onclick="heal()">HEAL</button>
+        <button onclick="giveUp()">GIVE UP</button>
+      </div>
+    </div>
+
+    <!-- Battle Log -->
+    <div id="BattleLog">
+      <div class="container">
+        <div class="card">
+          <div class="title"><h2>Battle Log</h2></div>
+          <div id="logs"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Battle Log -->
+    <div id="GameOver">
+      <div class="container">
+        <div class="card">
+          <div class="title"><h2>Game Over!</h2></div>
+          <h3 id="Status"></h3>
+          <button onclick="restart()">Start New Game</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
