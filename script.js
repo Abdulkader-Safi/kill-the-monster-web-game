@@ -82,18 +82,6 @@ let restart = () => {
   window.location.reload();
 };
 
-const logMove = (isPlayer, move, value) => {
-  let name = isPlayer === true ? "Player" : "Monster";
-  let moveName =
-    move === "attack"
-      ? `attacks and deals <span class='cred'>${value}</span>`
-      : `heals himself for <span class='cgreen'>${value}</span>`;
-
-  Logs.innerHTML += `
-  <p><span class=${name}>${name}</span> ${moveName}</p>
-  `;
-};
-
 let gameOver = (msg) => {
   GameOver.style.display = "block";
   BattleLog.style.display = "none";
@@ -113,4 +101,16 @@ let monsterAttack = (min, max) => {
   yourHeath -= attackPowerMonster;
   YourHeath.style.width = `${yourHeath}%`;
   logMove(false, "attack", attackPowerMonster);
+};
+
+const logMove = (isPlayer, move, value) => {
+  let name = isPlayer === true ? "Player" : "Monster";
+  let moveName =
+    move === "attack"
+      ? `attacks and deals <span class='cred'>${value}</span>`
+      : `heals himself for <span class='cgreen'>${value}</span>`;
+
+  Logs.innerHTML += `
+  <p><span class=${name}>${name}</span> ${moveName}</p>
+  `;
 };
