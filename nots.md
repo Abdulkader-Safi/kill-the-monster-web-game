@@ -1,6 +1,6 @@
 # Kill The Monster
 
-https://techlariousexam1-abdulkader-safi.netlify.app/
+https://kill-the-monster-abdulkader-safi-game.netlify.app/
 
 ## Functions explanations
 
